@@ -6,24 +6,26 @@
         <h2 class="titulo">{{produto.nome}}</h2>
         <p class="preco">{{produto.descricao}}</p>
     </div> 
+      
   </section>
 </template>
 
 
 <script>
+ import{api} from '../services.js'
+
 export default {
 name:"produtosLista",
 data(){
     return{
-        produtos:null
+        produtos:{}
     }
 },
 methods:{
     getProdutos(){
-        fetch("http://localhost:3000/produto")
-        .then(r => r.json())
-        .then(r => this.produtos = r)
-    }
+        api.get("http://localhost:3000/produto").then(response => {this.produtos = response.data})
+    },
+   
 },
 created(){
     this.getProdutos();
