@@ -2,7 +2,7 @@
 <div>
  <section>
    <h2>Crie a sua conta</h2>
-   <transition mode="out in">
+   <transition mode="out-in">
    <button class="btn " v-if="!criar" @click="criar = true">Criar Conta</button>
    <UsuarioForm v-else>
      <button class="btn btn-form">Criar Usuario</button>
