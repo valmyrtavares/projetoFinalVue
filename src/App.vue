@@ -3,7 +3,9 @@
    
     <TheHeader/>
     <main id="main">
+      <transition mode="out-in">
     <router-view></router-view>
+      </transition>
     </main>
     <TheFooter/>
   </div>
@@ -25,6 +27,9 @@ export default{
 </script>
 
 <style>
+label{
+  margin-bottom:5px;
+}
 * {
   box-sizing: border-box;
 }
@@ -101,6 +106,8 @@ textarea {
   margin-bottom:15px;
 
 }
+
+
 input:hover,
 input:focus,
 textarea:hover,

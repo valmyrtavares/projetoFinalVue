@@ -36,7 +36,6 @@ export default {
     },
     computed:{
         paginas(){
-            debugger
             const current = Number(this.$route.query._page)
             const range = 9;
             const offset = Math.ceil(range/2)
@@ -55,18 +54,11 @@ export default {
         paginasTotal(){
             const total = this.produtosTotal / this.produtosPorPagina
             return  Math.ceil(total)
-          
         }
     }
 }
-            
-           
-            
-
-    
-
 </script>
-
+  
 <style>
 ul{
     grid-column: 1 / -1;
@@ -87,5 +79,12 @@ ul a:hover{
     background: #87f;
     color:white;
 }
-
 </style>
+          
+            
+
+    
+
+            
+
+
