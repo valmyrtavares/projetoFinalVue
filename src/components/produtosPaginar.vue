@@ -45,7 +45,7 @@ export default {
                  pageArray.push(i)
                 
             }
-            console.log(current)
+          
              pageArray.splice(0, current - offset)
               pageArray.splice(range, total)
             return pageArray
