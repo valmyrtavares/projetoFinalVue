@@ -14,7 +14,7 @@
 
 
 <script>
-import UsuarioForm from '@/components/usuarioForm.vue'
+import UsuarioForm from '@/views/Usuario/usuarioForm.vue'
 
 export default {
     name:"loginCriar",
