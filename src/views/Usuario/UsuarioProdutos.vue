@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>
+    <h2>      
       adicionar Produto
     </h2>
     <produtoAdicionar/>
